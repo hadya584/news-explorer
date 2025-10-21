@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +13,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsAppProject">
+        <activity
+            android:name=".ResultsActivity"
+            android:exported="false"
+            android:label="Results"
+            android:theme="@style/Theme.NewsAppProject" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.NewsAppProject" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity
+            android:name=".TopHeadlinesActivity"
+            android:exported="false"
+            android:label="TopHeadlinesActivity"
+            android:theme="@style/Theme.NewsAppProject" />
         <activity
             android:name=".SourcesActivity"
             android:exported="false"
