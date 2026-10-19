@@ -17,14 +17,14 @@
 
 News Explorer is a native Android app built with Kotlin and Jetpack Compose on top of the [NewsAPI](https://newsapi.org/) REST API. Users can search articles by keyword and narrow results to a specific publisher, page through top U.S. headlines by category, or open an interactive Google Map and long-press any location to load news about that place. The app remembers recent choices across sessions: last search, last category, and last map location.
 
-<!-- Screenshots: add images to a /screenshots folder and uncomment.
+
 <p align="center">
+  <img src="screenshots/login.png" width="200" />
   <img src="screenshots/search.png" width="200" />
-  <img src="screenshots/sources.png" width="200" />
   <img src="screenshots/headlines.png" width="200" />
   <img src="screenshots/map.png" width="200" />
 </p>
--->
+
 
 ## Features
 
